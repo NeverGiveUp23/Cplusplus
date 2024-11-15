@@ -7,6 +7,7 @@
 #include <string>
 
 void input(std::string &name, unsigned &birthYear, std::array<int,12> &monthlyIncome){
+    int yearly = 0;
     std::cout << "Name: ";
     std::getline(std::cin , name); // get line reads a string.
 
@@ -18,7 +19,6 @@ void input(std::string &name, unsigned &birthYear, std::array<int,12> &monthlyIn
 
     std::cout << "birth year? ";
     std::cin >> birthYear;
-
     std::cout << "Monthly Income: ";
     int i;
 
@@ -27,8 +27,7 @@ void input(std::string &name, unsigned &birthYear, std::array<int,12> &monthlyIn
         std::cin >> monthlyIncome[i];
     }
 
-
-    std::cout << "Name: " << name << " Birth Year: " << birthYear << std::endl;
+    std::cout << "Name: " << name << " Birth Year: " << birthYear << yearly << std::endl;
 }
 
 
