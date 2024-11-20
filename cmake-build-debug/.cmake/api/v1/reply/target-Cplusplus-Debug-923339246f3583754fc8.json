@@ -91,7 +91,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "data.cpp",
+			"path" : "functions.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
