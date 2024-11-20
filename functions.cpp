@@ -93,11 +93,6 @@ inline int simple(double a);
 int number = 1;
 
 
-
-
-
-
-
 int main() {
     addTwo(2, 2);
 
