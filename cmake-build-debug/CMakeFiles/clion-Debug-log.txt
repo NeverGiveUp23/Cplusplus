@@ -1,4 +1,4 @@
 /Users/felix/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Users/felix/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -G Ninja -S /Users/felix/Desktop/Cplusplus -B /Users/felix/Desktop/Cplusplus/cmake-build-debug
--- Configuring done (0.1s)
--- Generating done (0.2s)
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
 -- Build files have been written to: /Users/felix/Desktop/Cplusplus/cmake-build-debug
