@@ -91,7 +91,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "oop/Easter.cpp",
+			"path" : "pointer.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
