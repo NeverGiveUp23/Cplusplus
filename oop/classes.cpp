@@ -8,7 +8,11 @@
 using std::string; using std::format; using std::cout; using std::ostream;
 using sview = std::string_view;
 
+// side note that a struct starts by being public, whereas a class starts by being private.
+
 struct Person { // defines a type
+
+private: // everything from here cannot be accessed externally
     string name_;
     int age_;
     string city_;
@@ -18,7 +22,15 @@ struct Person { // defines a type
     Person();
     // you can overload a constructot w/ different parameter combinations
     Person(sview s, int a, sview c) : name_(s), age_(a), city_(c) {};
+
+
+public: // everything from here can be used externally
+    Person(sview n, sview c, int a)
+        : name_{n}, city_{c}, age_{a} {}
+        void print();
 };;
+
+
 
 struct Person2 {
     string name;

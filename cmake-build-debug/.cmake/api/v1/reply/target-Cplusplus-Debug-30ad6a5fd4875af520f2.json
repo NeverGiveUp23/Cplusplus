@@ -91,7 +91,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "binary.cpp",
+			"path" : "oop/Easter.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

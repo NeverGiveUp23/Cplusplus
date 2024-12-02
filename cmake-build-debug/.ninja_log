@@ -1,11 +1,15 @@
 # ninja log v6
-6	772	1732070161924219042	CMakeFiles/Cplusplus.dir/functions.cpp.o	21095889854abd42
-6	597	1731871721547542689	CMakeFiles/Cplusplus.dir/data.cpp.o	7b760d5d1ce560c8
-6	722	1732558979611914853	CMakeFiles/Cplusplus.dir/binary.cpp.o	be78c7ca890cd2dc
-11	693	1731704788783854684	CMakeFiles/Cplusplus.dir/main.cpp.o	6ce960361ee87b4c
-5	597	1731869026805191303	CMakeFiles/Cplusplus.dir/strings.cpp.o	751370a4074b1494
-5	126	1732571326654712267	build.ninja	e1fbf80e1b7bf6e7
-5	527	1732071054090346056	CMakeFiles/Cplusplus.dir/arrays.cpp.o	83c5186a3ee7087e
-724	767	1732558980330104259	Cplusplus	155ab7948b2422fa
-2	139	1732072354159120081	CMakeFiles/Cplusplus.dir/error.cpp.o	7618e251a9d2f858
+8	793	1732598994313325077	CMakeFiles/Cplusplus.dir/oop/Easter.cpp.o	de987bf5842a0f60
+5	126	1732599008097781474	build.ninja	e1fbf80e1b7bf6e7
 6	706	1732145605584223539	CMakeFiles/Cplusplus.dir/oop/classes.cpp.o	d5c23989360425b3
+2	139	1732072354159120081	CMakeFiles/Cplusplus.dir/error.cpp.o	7618e251a9d2f858
+5	597	1731869026805191303	CMakeFiles/Cplusplus.dir/strings.cpp.o	751370a4074b1494
+724	767	1732558980330104259	Cplusplus	155ab7948b2422fa
+5	527	1732071054090346056	CMakeFiles/Cplusplus.dir/arrays.cpp.o	83c5186a3ee7087e
+11	693	1731704788783854684	CMakeFiles/Cplusplus.dir/main.cpp.o	6ce960361ee87b4c
+8	607	1732598994312922327	CMakeFiles/Cplusplus.dir/oop/Person.cpp.o	d253a56c92d7bbb3
+7	632	1732598994311854701	CMakeFiles/Cplusplus.dir/binary.cpp.o	be78c7ca890cd2dc
+6	597	1731871721547542689	CMakeFiles/Cplusplus.dir/data.cpp.o	7b760d5d1ce560c8
+6	772	1732070161924219042	CMakeFiles/Cplusplus.dir/functions.cpp.o	21095889854abd42
+2	63	1732599008097781474	build.ninja	e1fbf80e1b7bf6e7
+4	586	1732599008117263157	Cplusplus	3b57c27037a4d96a

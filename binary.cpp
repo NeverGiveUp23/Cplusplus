@@ -10,7 +10,7 @@ using std::cout; using std::vector; using std::cin;
 int BinarySearch(vector<int> numbers, int key){
     int high = numbers.size() - 1;
     int mid;
-    int low = numbers.front(); // setting low to the begining of the vector by using front() function from the stl
+    int low = numbers.front(); // setting low to the begining of the vector by using front() function from the stl you can use numbers[0]
 
 // edge case whereas long as high is greater than low
 // and the middle of the vector is not the inputted key.
