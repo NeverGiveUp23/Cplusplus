@@ -49,17 +49,11 @@ cmake_ninja_workdir = /Users/felix/Desktop/Cplusplus/cmake-build-debug/
 
 build cmake_object_order_depends_target_Cplusplus: phony || .
 
-build CMakeFiles/Cplusplus.dir/pointer.cpp.o: CXX_COMPILER__Cplusplus_unscanned_Debug /Users/felix/Desktop/Cplusplus/pointer.cpp || cmake_object_order_depends_target_Cplusplus
-  DEP_FILE = CMakeFiles/Cplusplus.dir/pointer.cpp.o.d
+build CMakeFiles/Cplusplus.dir/memory/Dmem.cpp.o: CXX_COMPILER__Cplusplus_unscanned_Debug /Users/felix/Desktop/Cplusplus/memory/Dmem.cpp || cmake_object_order_depends_target_Cplusplus
+  DEP_FILE = CMakeFiles/Cplusplus.dir/memory/Dmem.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/Cplusplus.dir
-  OBJECT_FILE_DIR = CMakeFiles/Cplusplus.dir
-
-build CMakeFiles/Cplusplus.dir/enum.cpp.o: CXX_COMPILER__Cplusplus_unscanned_Debug /Users/felix/Desktop/Cplusplus/enum.cpp || cmake_object_order_depends_target_Cplusplus
-  DEP_FILE = CMakeFiles/Cplusplus.dir/enum.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/Cplusplus.dir
-  OBJECT_FILE_DIR = CMakeFiles/Cplusplus.dir
+  OBJECT_FILE_DIR = CMakeFiles/Cplusplus.dir/memory
 
 
 # =============================================================================
@@ -69,7 +63,7 @@ build CMakeFiles/Cplusplus.dir/enum.cpp.o: CXX_COMPILER__Cplusplus_unscanned_Deb
 #############################################
 # Link the executable Cplusplus
 
-build Cplusplus: CXX_EXECUTABLE_LINKER__Cplusplus_Debug CMakeFiles/Cplusplus.dir/pointer.cpp.o CMakeFiles/Cplusplus.dir/enum.cpp.o
+build Cplusplus: CXX_EXECUTABLE_LINKER__Cplusplus_Debug CMakeFiles/Cplusplus.dir/memory/Dmem.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk
   OBJECT_DIR = CMakeFiles/Cplusplus.dir
   POST_BUILD = :

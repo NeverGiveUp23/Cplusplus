@@ -43,7 +43,7 @@ namespace ScopedEnumConversions {
 
 
         account = Suit::Clubs; // ERROR cant convert from 'Suit' to 'int'
-        account = static_cast<int>(Suit::Hearts); // Ok!
+        account = static_cast<int>(Suit::Hearts); // Ok! explicit cast
 
     };
 }
