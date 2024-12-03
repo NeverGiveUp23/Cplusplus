@@ -4,9 +4,12 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <iostream>
+
+using namespace std;
 
 
-int main() {
+void Malloc() {
     //performing a cast between due to c++ compiler and the malloc void pointer
     int *p = static_cast<int *>(malloc(sizeof(int))); // getting the size and allocating that size on the heap
     *p = 99;
@@ -20,7 +23,7 @@ int main() {
     // check the return type
     if(i == NULL) { // check the value in the pointer
         printf("Failed to allocate memory\n");
-        return -1;
+        exit(0);
     };
     *i = 5; // 0x00006000015ac000 -> 00 00 00 00   00 00 00 00  00 00 00 00  00 00 00 00
     printf("%d\n", *i); // 0x00006000015ac000 -> 05 00 00 00   00 00 00 00  00 00 00 00  00 00 00 00
@@ -30,6 +33,9 @@ int main() {
 
     // if i want to allocate memory for an array
     // the first argument is where we can say how much memory we need, this case 5 ints in the array
+
+
+
     int *arr = (int*) calloc(5, sizeof(int));
     free(arr);
     arr = NULL;
@@ -42,6 +48,7 @@ int main() {
     } else {
         printf("Memory allocated successfully\n");
         int i;
+
         for(i = 0; i < 20; ++i){
             arrm[i] = i + 1;
         }
@@ -53,8 +60,64 @@ int main() {
     free(arrm);
     arrm = NULL;
 
+}
 
-    // int Cpp you can use 'new', delete
+
+// int Cpp you can use 'new', delete
+
+void New() {
+    int *p = new int; // only specifying the type -> the compiler knows the size of the type.
+    *p = 9;
+
+    cout << *p << endl;
+
+    delete p; // free the memory
+    p = nullptr;
+
+    // you can initialize in the declaration
+    int *d = new int(5); //
+
+    cout << *d << endl;
+
+    delete d;
+    d = nullptr;
+
+
+}
+
+
+void NewArrays() {
+
+
+    // new for arrays
+
+    int *arr = new int[5]; //{1,2,3,4,5};
+
+    for(int i = 0; i < 5; i++){
+        arr[i] = i;
+    }
+    delete []arr; // using []arr to specify the array type to ensure it is all deleted
+}
+
+void Strings() {
+    char *p = new char[5]; // add another for a null terminated
+    strcpy(p , "Code");
+    cout << p << endl;
+
+    delete []p;
+    p = nullptr;
+}
+
+
+
+int main() {
+
+Strings();
+
+
+
+
+
 
 
 
