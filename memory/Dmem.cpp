@@ -127,12 +127,97 @@ void TwoDArr() {
 
 }
 
+int bum = 200;
+int grade = 88;
+double pi = 3.14;
+
+int* pbum = &bum; // immediatly after the data type
+int *pgrade = &grade; // immediatly before the var name
+double * ppi = &pi; // in between w/ spaces
+
+// define multiple pointers in one line
+int *pt1 = &bum, *ptr2 = &grade; // each declaration must have *
+
+
+
+// ways to define a null ptr
+int* iptr = nullptr;
+int *iptr2 = NULL;
+int * iptr3 = 0;
+
+
+// double function with a pointer param
+void Double(double* val) {
+    if(val != nullptr) { // checking to see if val is not a nullptr before derefencing it.
+        *val *= *val; // dereference val and perform the calculation
+    }
+}
+
+
+// square function with a reference param
+void square (double& val) {
+    val *= val;
+}
+
+// array function with a pointer param for built in array
+
+void display_array(int* arr, int size) {
+    if (arr) { // same as arr != nullptr
+        int i = 0;
+        for(i; i < size; i++){
+            cout << arr[i] <<  " " << endl;
+        }
+    }
+}
 
 
 int main() {
 
 TwoDArr();
 
+string s = "Hello";
+string* sptr = &s;
+
+cout << sptr->size() << endl; // displays the size of s -> member access operator (->)
+
+int num = 8;
+int* pnum = &num;
+
+
+// changing the object the pointer points too
+pt1 = &grade;
+
+
+// define and initialize a regualr, reference, and pointer variable
+double pi2 = 3.14; // reg var
+double& dref = pi2; // reference var
+double* dptr = &pi2; // pointer - requires address of operator
+
+// displaying the underlying value
+cout << pi << endl; // displays 3.14
+cout << dref << endl; // displays 3.14
+cout << *dptr << endl; // displays 3.14 - req indirection operator
+    puts("\n");
+
+
+// display memory address
+    puts("display memory address");
+ cout << "&pi2: " <<&pi2 << endl;
+ cout << "&dref: " << &dref << endl;
+ cout << "&ptr: " << &dptr << endl;
+
+
+ cout << pi2 << " * " << pi2 << " is: " << endl;
+ // using the address operator to pass argument
+    Double(&pi2);
+    puts("\n");
+
+    cout << pi2 << endl;
+
+
+    const int size = 10;
+    int arr[size]{0};
+    display_array(arr, size);
 
     return 0;
 }
