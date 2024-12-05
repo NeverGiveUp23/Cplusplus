@@ -108,18 +108,30 @@ void Strings() {
     p = nullptr;
 }
 
+void TwoDArr() {
+    int *p1 = new int[3]{1,5,9};
+    int *p2 = new int[3]{2,9,8};
+
+    int **pData = new int *[2]; // '**' pointer pointing to a pointer
+
+    pData[0] = p1;
+    pData[1] = p2;
+
+
+
+   cout << pData[0][1] << endl;
+
+    delete []p1;
+    delete []p2;
+    delete []pData;
+
+}
+
 
 
 int main() {
 
-Strings();
-
-
-
-
-
-
-
+TwoDArr();
 
 
     return 0;
