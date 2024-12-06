@@ -4,5 +4,6 @@ project(Cplusplus)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(Cplusplus
-        memory/StepCounter2.cpp
+        memory/newmem.cpp
+        memory/RAII.cpp
 )
