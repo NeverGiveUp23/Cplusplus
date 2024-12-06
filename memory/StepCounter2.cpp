@@ -5,10 +5,14 @@
 /*
  This is Step Counter 2,
 
- First we create a class called Counter with a private field defining a vector of steps
+ First we create a class called Counter with a private field defining a private data member vector of steps
+ Next, we create public field for our methods and vector of dayOfTheWeek.
 
 
+this process makes it a lot more readable due to the class structure of the program compared to Counter1
 
+ With the class structure i can access the methods and variables with the this-> pointer
+ or by calling Counter class directly and in this case I used (Counter steps).
  */
 
 
