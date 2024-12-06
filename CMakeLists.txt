@@ -4,6 +4,5 @@ project(Cplusplus)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(Cplusplus
-        memory/newmem.cpp
-        memory/RAII.cpp
+        oop/movieclass.cpp
 )

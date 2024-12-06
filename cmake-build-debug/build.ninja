@@ -49,17 +49,11 @@ cmake_ninja_workdir = /Users/felix/Desktop/Cplusplus/cmake-build-debug/
 
 build cmake_object_order_depends_target_Cplusplus: phony || .
 
-build CMakeFiles/Cplusplus.dir/memory/newmem.cpp.o: CXX_COMPILER__Cplusplus_unscanned_Debug /Users/felix/Desktop/Cplusplus/memory/newmem.cpp || cmake_object_order_depends_target_Cplusplus
-  DEP_FILE = CMakeFiles/Cplusplus.dir/memory/newmem.cpp.o.d
+build CMakeFiles/Cplusplus.dir/oop/movieclass.cpp.o: CXX_COMPILER__Cplusplus_unscanned_Debug /Users/felix/Desktop/Cplusplus/oop/movieclass.cpp || cmake_object_order_depends_target_Cplusplus
+  DEP_FILE = CMakeFiles/Cplusplus.dir/oop/movieclass.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/Cplusplus.dir
-  OBJECT_FILE_DIR = CMakeFiles/Cplusplus.dir/memory
-
-build CMakeFiles/Cplusplus.dir/memory/RAII.cpp.o: CXX_COMPILER__Cplusplus_unscanned_Debug /Users/felix/Desktop/Cplusplus/memory/RAII.cpp || cmake_object_order_depends_target_Cplusplus
-  DEP_FILE = CMakeFiles/Cplusplus.dir/memory/RAII.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/Cplusplus.dir
-  OBJECT_FILE_DIR = CMakeFiles/Cplusplus.dir/memory
+  OBJECT_FILE_DIR = CMakeFiles/Cplusplus.dir/oop
 
 
 # =============================================================================
@@ -69,7 +63,7 @@ build CMakeFiles/Cplusplus.dir/memory/RAII.cpp.o: CXX_COMPILER__Cplusplus_unscan
 #############################################
 # Link the executable Cplusplus
 
-build Cplusplus: CXX_EXECUTABLE_LINKER__Cplusplus_Debug CMakeFiles/Cplusplus.dir/memory/newmem.cpp.o CMakeFiles/Cplusplus.dir/memory/RAII.cpp.o
+build Cplusplus: CXX_EXECUTABLE_LINKER__Cplusplus_Debug CMakeFiles/Cplusplus.dir/oop/movieclass.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk
   OBJECT_DIR = CMakeFiles/Cplusplus.dir
   POST_BUILD = :
