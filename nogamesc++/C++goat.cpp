@@ -4,18 +4,12 @@
 
 #include <iostream>
 #include <time.h>
-#define SIDES 6
-#define n_dice 2
 
 using namespace std;
 
-template<class S>
-inline S sum(const S data[], int size, S t = 0){
-    for(int i = 0; i < size; ++i){
-        t += data[i];
-    }
-    return t;
-}
+
+constexpr int SIDES {6};
+constexpr int n_dice {2};
 
 template<class T>
 T circle(T name){
@@ -33,7 +27,7 @@ inline T swapT(T* a, T* b){
     *b = temp;
 }
 
-// or
+// or instead of pointers -> use call by reference
 
 template<class T>
 inline T swapTT(T &a, T &b){ // inline will make the swap efficient to the compiler and call by ref to int. -> will use the variable locally
@@ -80,15 +74,6 @@ inline int rollDice(){
 
 
 int main(){
-    int i;
-
-    int N = 40;
-
-    int accum = 0;
-
-    vector<int> data[N];
-
-    sum(*data, &N, *accum);
 
     int name;
    // circle( name);
