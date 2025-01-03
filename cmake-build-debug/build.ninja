@@ -49,11 +49,17 @@ cmake_ninja_workdir = /Users/felix/Desktop/Cplusplus/cmake-build-debug/
 
 build cmake_object_order_depends_target_Cplusplus: phony || .
 
-build CMakeFiles/Cplusplus.dir/lvaluervalue.cpp.o: CXX_COMPILER__Cplusplus_unscanned_Debug /Users/felix/Desktop/Cplusplus/lvaluervalue.cpp || cmake_object_order_depends_target_Cplusplus
-  DEP_FILE = CMakeFiles/Cplusplus.dir/lvaluervalue.cpp.o.d
+build CMakeFiles/Cplusplus.dir/nogamesc++/C++goat.cpp.o: CXX_COMPILER__Cplusplus_unscanned_Debug /Users/felix/Desktop/Cplusplus/nogamesc++/C++goat.cpp || cmake_object_order_depends_target_Cplusplus
+  DEP_FILE = CMakeFiles/Cplusplus.dir/nogamesc++/C++goat.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/Cplusplus.dir
-  OBJECT_FILE_DIR = CMakeFiles/Cplusplus.dir
+  OBJECT_FILE_DIR = CMakeFiles/Cplusplus.dir/nogamesc++
+
+build CMakeFiles/Cplusplus.dir/nogamesc++/GnF.cpp.o: CXX_COMPILER__Cplusplus_unscanned_Debug /Users/felix/Desktop/Cplusplus/nogamesc++/GnF.cpp || cmake_object_order_depends_target_Cplusplus
+  DEP_FILE = CMakeFiles/Cplusplus.dir/nogamesc++/GnF.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/Cplusplus.dir
+  OBJECT_FILE_DIR = CMakeFiles/Cplusplus.dir/nogamesc++
 
 
 # =============================================================================
@@ -63,7 +69,7 @@ build CMakeFiles/Cplusplus.dir/lvaluervalue.cpp.o: CXX_COMPILER__Cplusplus_unsca
 #############################################
 # Link the executable Cplusplus
 
-build Cplusplus: CXX_EXECUTABLE_LINKER__Cplusplus_Debug CMakeFiles/Cplusplus.dir/lvaluervalue.cpp.o
+build Cplusplus: CXX_EXECUTABLE_LINKER__Cplusplus_Debug CMakeFiles/Cplusplus.dir/nogamesc++/C++goat.cpp.o CMakeFiles/Cplusplus.dir/nogamesc++/GnF.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1
   OBJECT_DIR = CMakeFiles/Cplusplus.dir
   POST_BUILD = :
