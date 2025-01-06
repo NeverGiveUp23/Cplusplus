@@ -4,7 +4,5 @@ project(Cplusplus)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(Cplusplus
-        nogamesc++/C++goat.cpp
-        nogamesc++/GnF.cpp
         nogamesc++/multitemplates.cpp
 )

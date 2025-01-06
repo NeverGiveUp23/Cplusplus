@@ -15,10 +15,22 @@ void copy(const T1 source[], T2 destination[], int size){ // T2 is not a const d
 
     for(int i = 0; i < size; i++){
         destination[i] = static_cast<T2>(source[i]); // safe casting, converting to T2 data type
+    };
+
+    cout << "This is from destination copy: " << endl;
+    for(int i = 0; i < size; i++){
+        cout << destination[i] << endl;
     }
 }
 
 int main(){
+    int ar1[] {1,2,3};
+
+    double ar2[]{};
+
+    copy(ar1, ar2, 3);
+
+
 
 
     return 0;
