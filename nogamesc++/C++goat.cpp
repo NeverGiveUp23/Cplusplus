@@ -53,6 +53,7 @@ void swap_double(double *a, double* b){
     inline int r_sides(){
   return (rand() % SIDES + 1);
 }
+
 inline int* outcome = new int[n_dice * SIDES + 1];
 inline int rollDice(){
     int d1, d2;
