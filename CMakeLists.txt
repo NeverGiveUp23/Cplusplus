@@ -4,5 +4,6 @@ project(Cplusplus)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(Cplusplus
-        nogamesc++/multitemplates.cpp
+        nogamesc++/point.cpp
+        nogamesc++/dque.cpp
 )
