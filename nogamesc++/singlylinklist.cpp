@@ -27,11 +27,11 @@ private:
 };
 
 inline void slist::prepend(char c) {
-    slistelem* temp = new slistelem; // TODO: DELETE HEAP MEMORY ALLOCATION
-    assert(temp != 0); // macro to check for conditions tha should always be true during execution of the program
-    temp -> next = h; // link to slist
+    slistelem* temp = new slistelem;
+    assert(temp != 0);
+    temp -> next = h;
     temp -> data = c;
-    h = temp; // update head of list
+    h = temp;
 }
 
 inline void slist::del() {
