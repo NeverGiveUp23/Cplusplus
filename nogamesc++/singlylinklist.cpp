@@ -38,6 +38,7 @@ inline void slist::del() {
     slistelem* temp = h;
     h = h->next; // presumes not empty list
     delete(temp);
+    cout << "Temp allocation deleted" << endl;
 }
 
 inline void slist::print() const {

@@ -8,4 +8,5 @@ add_executable(Cplusplus
 #        nogamesc++/dque.cpp
 #        nogamesc++/graph.cpp
         nogamesc++/singlylinklist.cpp
+        fulllearningcpp/initializer.cpp
 )

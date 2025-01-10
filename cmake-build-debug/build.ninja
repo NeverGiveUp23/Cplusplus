@@ -55,6 +55,12 @@ build CMakeFiles/Cplusplus.dir/nogamesc++/singlylinklist.cpp.o: CXX_COMPILER__Cp
   OBJECT_DIR = CMakeFiles/Cplusplus.dir
   OBJECT_FILE_DIR = CMakeFiles/Cplusplus.dir/nogamesc++
 
+build CMakeFiles/Cplusplus.dir/fulllearningcpp/initializer.cpp.o: CXX_COMPILER__Cplusplus_unscanned_Debug /Users/felix/Desktop/Cplusplus/fulllearningcpp/initializer.cpp || cmake_object_order_depends_target_Cplusplus
+  DEP_FILE = CMakeFiles/Cplusplus.dir/fulllearningcpp/initializer.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/Cplusplus.dir
+  OBJECT_FILE_DIR = CMakeFiles/Cplusplus.dir/fulllearningcpp
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Cplusplus
@@ -63,7 +69,7 @@ build CMakeFiles/Cplusplus.dir/nogamesc++/singlylinklist.cpp.o: CXX_COMPILER__Cp
 #############################################
 # Link the executable Cplusplus
 
-build Cplusplus: CXX_EXECUTABLE_LINKER__Cplusplus_Debug CMakeFiles/Cplusplus.dir/nogamesc++/singlylinklist.cpp.o
+build Cplusplus: CXX_EXECUTABLE_LINKER__Cplusplus_Debug CMakeFiles/Cplusplus.dir/nogamesc++/singlylinklist.cpp.o CMakeFiles/Cplusplus.dir/fulllearningcpp/initializer.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1
   OBJECT_DIR = CMakeFiles/Cplusplus.dir
   POST_BUILD = :
