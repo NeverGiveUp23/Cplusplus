@@ -3,10 +3,12 @@ project(Cplusplus)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Cplusplus
-#        nogamesc++/point.cpp
-#        nogamesc++/dque.cpp
-#        nogamesc++/graph.cpp
-        nogamesc++/singlylinklist.cpp
-        fulllearningcpp/initializer.cpp
-)
+add_executable(
+  Cplusplus
+  # nogamesc++/point.cpp
+  # nogamesc++/dque.cpp
+  # nogamesc++/graph.cpp
+  # nogamesc++/singlylinklist.cpp
+  # fulllearningcpp/initializer.cpp
+  fulllearningcpp/functions.cpp
+  #        fulllearningcpp/initializer.cpp)
