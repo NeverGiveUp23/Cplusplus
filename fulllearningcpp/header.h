@@ -1,3 +1,3 @@
 #include <iostream>
 
-void printName();
+inline void printName() { std::cout << "Hello from header file" << "\n"; };
