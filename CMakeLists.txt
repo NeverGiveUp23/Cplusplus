@@ -10,5 +10,12 @@ add_executable(
   # nogamesc++/graph.cpp
   # nogamesc++/singlylinklist.cpp
   # fulllearningcpp/initializer.cpp
-  fulllearningcpp/local.cpp
-  #        fulllearningcpp/initializer.cpp)
+  #fulllearningcpp/local.cpp
+       # fulllearningcpp/signed.cpp
+       # fulllearningcpp/bool.cpp
+       # fulllearningcpp/typeconversion.cpp
+       # fulllearningcpp/const.cpp
+        #fulllearningcpp/numeralsystem.cpp
+        fulllearningcpp/string.cpp
+        #        fulllearningcpp/initializer.cpp
+)

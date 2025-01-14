@@ -49,8 +49,8 @@ cmake_ninja_workdir = /Users/felix/Desktop/Cplusplus/cmake-build-debug/
 
 build cmake_object_order_depends_target_Cplusplus: phony || .
 
-build CMakeFiles/Cplusplus.dir/fulllearningcpp/functions.cpp.o: CXX_COMPILER__Cplusplus_unscanned_Debug /Users/felix/Desktop/Cplusplus/fulllearningcpp/functions.cpp || cmake_object_order_depends_target_Cplusplus
-  DEP_FILE = CMakeFiles/Cplusplus.dir/fulllearningcpp/functions.cpp.o.d
+build CMakeFiles/Cplusplus.dir/fulllearningcpp/string.cpp.o: CXX_COMPILER__Cplusplus_unscanned_Debug /Users/felix/Desktop/Cplusplus/fulllearningcpp/string.cpp || cmake_object_order_depends_target_Cplusplus
+  DEP_FILE = CMakeFiles/Cplusplus.dir/fulllearningcpp/string.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/Cplusplus.dir
   OBJECT_FILE_DIR = CMakeFiles/Cplusplus.dir/fulllearningcpp
@@ -63,7 +63,7 @@ build CMakeFiles/Cplusplus.dir/fulllearningcpp/functions.cpp.o: CXX_COMPILER__Cp
 #############################################
 # Link the executable Cplusplus
 
-build Cplusplus: CXX_EXECUTABLE_LINKER__Cplusplus_Debug CMakeFiles/Cplusplus.dir/fulllearningcpp/functions.cpp.o
+build Cplusplus: CXX_EXECUTABLE_LINKER__Cplusplus_Debug CMakeFiles/Cplusplus.dir/fulllearningcpp/string.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1
   OBJECT_DIR = CMakeFiles/Cplusplus.dir
   POST_BUILD = :
