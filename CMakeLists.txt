@@ -16,6 +16,9 @@ add_executable(
        # fulllearningcpp/typeconversion.cpp
        # fulllearningcpp/const.cpp
         #fulllearningcpp/numeralsystem.cpp
-        fulllearningcpp/string.cpp
+       # fulllearningcpp/string.cpp
+      #  fulllearningcpp/objectval.cpp
+        fulllearningcpp/vector.cpp
+        fulllearningcpp/error.cpp
         #        fulllearningcpp/initializer.cpp
 )
